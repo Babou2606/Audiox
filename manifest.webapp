@@ -1,0 +1,27 @@
+{
+  "version": "0.1",
+  "name": "Audiox",
+  "description": "Pour la Musique, uniquement ! - For Music, only !",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/logo_grand.png",
+    "60": "/img/logo.png"
+  },
+  "developer": {
+    "name": "Babou2606",
+    "url": "http://babou2606.com"
+  },
+  "locales": {
+    "fr": {
+      "description": "Pour la Musique, uniquement ! - For Music, only !",
+        "developer": {
+        "url": "http://babou2606.com"
+      }
+    }
+  },
+    "type": "privileged",
+	"permissions": {
+    "device-storage:music":   { "access": "readwrite", "description" : "Accéder aux fichiers en lecture, écriture" }
+	},
+  "default_locale": "fr"
+}

@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="fr" > 
+  <head>
+    <meta charset="utf-8">
+    <title>Audiox - Lecteur Audio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+   <link href="css/bootstrap.css" rel="stylesheet"> 
+        <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/audiox.js"></script>
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+  background-image:url(img/background.jpg);
+background-repeat:no-repeat;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">Audiox</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+<div class="lecteur">
+
+  <input type='button' id='Open_file' value='Charger toutes les musiques'>
+
+  <audio id="audioPlayer" preload="auto">
+	</audio>
+  
+	<div>
+    	<div id="progressBarControl">
+        <div id="progressBar">00:00</div>
+    	</div>
+     <div id="titre_musique"><marquee>Pas de lecture</marquee></div>
+	</div>
+  
+      <div id="avancement"></div>
+  <p></p>
+	
+
+	<!--<button class="control" onclick="play('audioPlayer', this)">Play</button>-->
+	<img class="controlplay" src="img/play.png"/>
+	<!-- <button class="control" onclick="resume('audioPlayer')">Stop</button> -->
+	<img class="controlstop" src="img/stop.png"/>
+	<!-- <span class="volume">
+    	<a class="stick1" onclick="volume('audioPlayer', 0)"></a>
+    	<a class="stick2" onclick="volume('audioPlayer', 0.3)"></a>
+    	<a class="stick3" onclick="volume('audioPlayer', 0.5)"></a>
+    	<a class="stick4" onclick="volume('audioPlayer', 0.7)"></a>
+    	<a class="stick5" onclick="volume('audioPlayer', 1)"></a>
+	    </span> -->
+
+	<br/><br/>
+  <div id="Conteneur_liste">
+    <h3>Liste :</h3>
+  <div id="liste"></div>
+  </div>
+<br/><br/>
+
+     </div>
+      
+      <div id="footer">
+        Created by Babou2606
+      </div>
+      
+    </div> <!-- /container -->
+
+    <!-- Le javascript-->
+
+   
+
+  </body>
+</html>
